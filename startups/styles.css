@@ -1,9 +1,8 @@
 /* Estilos globais */
-body, html {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    width: 100%;
-    overflow-x: hidden; /* Impede o scroll horizontal */
     box-sizing: border-box;
 }
 
@@ -52,183 +51,221 @@ nav .menu li a:hover {
 .banner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 40px;
-    background: #f4f4f4;
+    background-color: #e0e5d8;
 }
 
-.banner .content {
-    max-width: 50%;
-}
-
-.banner h2 {
-    font-size: 30px;
+.banner .content h2 {
+    font-size: 28px;
+    color: #333;
     line-height: 1.5;
 }
 
 .banner .btn {
-    background-color: #4a7c63;
+    display: inline-block;
+    background-color: #3a4a40;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 20px;
+}
+
+.banner .btn:hover {
+    background-color: #2f3d34;
 }
 
 .banner .image img {
-    max-width: 400px;
+    width: 300px;
+    border-radius: 20px;
 }
 
-/* Seção de informações */
+/* Estilos para a seção de informações */
 .info-section {
     display: flex;
     justify-content: space-around;
-    margin-top: 40px;
+    padding: 50px;
+    background-color: #f7f7f7;
 }
 
 .info-card {
     text-align: center;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 25%;
-}
-
-.info-card img {
-    width: 60px;
-    height: auto;
+    background-color: #a8b898;
+    border-radius: 20px;
+    width: 28%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .info-card h3 {
+    margin-top: 15px;
     font-size: 24px;
-    margin: 15px 0;
 }
 
-/* Como Funciona */
+.info-card p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Estilos para a seção 'Como Funciona' */
 .como-funciona {
+    padding: 80px;
+    background-color: #e0e5d8;
     text-align: center;
-    margin: 40px 0;
 }
 
 .como-funciona h2 {
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
 .funciona-container {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .funciona-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 20px;
+    width: 28%;
     text-align: center;
-    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .funciona-card img {
     width: 60px;
     height: auto;
+    margin-bottom: 15px;
 }
 
 .funciona-card h3 {
+    margin-bottom: 10px;
     font-size: 20px;
-    margin: 15px 0;
 }
 
-/* Mensalidades */
+/* Estilos para a seção 'Mensalidades' */
 .mensalidades-section {
+    background-color: #e0e5d8;
+    padding: 80px;
     text-align: center;
-    margin: 40px 0;
+}
+
+.mensalidades-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 .mensalidades-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .mensalidade-card {
-    width: 30%;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fafafa;
+    background-color: #a8b898;
+    border-radius: 20px;
+    padding: 40px;
+    width: 28%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: left;
 }
 
 .mensalidade-card h3 {
     font-size: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .mensalidade-card p {
     font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.benefits {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px;
+.mensalidade-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
 }
 
-.benefit {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    width: 45%;
-}
-
-.benefit img {
-    width: 30px;
-    height: auto;
-    margin-right: 10px;
-}
-
-.benefit p {
+.mensalidade-card ul li {
     font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
 }
 
-/* Botões */
-.btn {
-    background-color: #4a7c63;
-    color: white;
+.mensalidade-card .btn {
+    display: inline-block;
     padding: 10px 20px;
+    background-color: white;
+    color: #333;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    font-weight: bold;
+    border: 1px solid #a8b898;
 }
 
-.btn:hover {
-    background-color: #3a5d47;
+.mensalidade-card .btn:hover {
+    background-color: #333;
+    color: white;
+    border-color: #333;
 }
 
-/* Contato */
+/* Estilos para a seção de contato */
 .contato-section {
-    background-color: #f4f4f4;
-    padding: 40px 20px;
+    background-color: #f7f7f7;
+    padding: 80px;
+    text-align: center;
 }
 
 .contato-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .contato-img img {
-    width: 60%;
+    width: 300px;
+    border-radius: 20px;
 }
 
 .contato-text {
-    width: 40%;
+    max-width: 500px;
+    text-align: left;
 }
 
 .contato-text h2 {
-    font-size: 30px;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
-/* Rodapé */
+.contato-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contato-text .btn {
+    display: inline-block;
+    background-color: #3a4a40;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contato-text .btn:hover {
+    background-color: #2f3d34;
+}
+
+/* Estilos para o rodapé */
 footer {
     background-color: #3a4a40;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
+    margin-top: 20px;
 }
