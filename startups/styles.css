@@ -1,148 +1,123 @@
-* {
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
-
 header {
+    background-color: #3a4a40;
+    color: white;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #f4f4f4;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo h1 {
-    margin-right: 10px;
+header .logo h1 {
+    margin: 0;
     font-size: 24px;
-    font-weight: bold;
 }
 
-.logo img {
-    width: 50px; /* Define a largura da logo */
-    height: auto; /* Mantém a proporção da imagem */
+header .logo img {
+    width: 40px;
+    height: auto;
+    margin-left: 10px;
 }
 
-nav ul {
-    display: flex;
+nav .menu {
     list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-nav ul li {
-    margin-left: 30px;
+nav .menu li {
+    display: inline;
 }
 
-nav ul li a {
+nav .menu li a {
+    color: white;
     text-decoration: none;
-    color: #333;
-    font-size: 18px;
+    padding: 5px 10px;
 }
 
+nav .menu li a:hover {
+    background-color: #5c7364;
+    border-radius: 5px;
+}
+
+/* Estilos para o banner */
 .banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to left, white, #a8b898);
-    padding: 100px 50px;
-    min-height: 80vh;
+    padding: 40px;
+    background-color: #e0e5d8;
 }
 
-.content {
-    max-width: 50%;
-}
-
-.content h2 {
-    font-size: 36px;
-    color: white;
-    margin-bottom: 20px;
-}
-
-.content strong {
+.banner .content h2 {
+    font-size: 28px;
     color: #333;
+    line-height: 1.5;
 }
 
-.btn {
+.banner .btn {
     display: inline-block;
+    background-color: #3a4a40;
+    color: white;
     padding: 10px 20px;
-    background-color: white;
-    color: #333;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
-    font-weight: bold;
-    border: 1px solid #a8b898;
 }
 
-.btn:hover {
-    background-color: #333;
-    color: white;
-    border-color: #333;
+.banner .btn:hover {
+    background-color: #2f3d34;
 }
 
-.image img {
-    max-width: 100%;
-    border-radius: 10px;
+.banner .image img {
+    width: 300px;
+    border-radius: 20px;
 }
 
+/* Estilos para a seção de informações */
 .info-section {
     display: flex;
     justify-content: space-around;
-    padding: 100px;
-    background-color: #f4f4f4;
-    min-height: 70vh;
+    padding: 50px;
+    background-color: #f7f7f7;
 }
 
 .info-card {
+    text-align: center;
+    padding: 20px;
     background-color: #a8b898;
     border-radius: 20px;
-    padding: 50px;
-    text-align: center;
     width: 28%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.info-card img {
-    width: 70px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
 .info-card h3 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    font-size: 24px;
 }
 
 .info-card p {
-    font-size: 18px;
-    color: #333;
-    line-height: 1.6;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
+/* Estilos para a seção 'Como Funciona' */
 .como-funciona {
-    background-color: #e0e5d8;
     padding: 80px;
+    background-color: #e0e5d8;
     text-align: center;
 }
 
 .como-funciona h2 {
     font-size: 36px;
     margin-bottom: 20px;
-}
-
-.como-funciona p {
-    font-size: 20px;
-    margin-bottom: 50px;
-    color: #333;
 }
 
 .funciona-container {
@@ -152,73 +127,78 @@ nav ul li a {
 }
 
 .funciona-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 20px;
+    width: 28%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.funciona-card img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.funciona-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Estilos para a seção 'Mensalidades' */
+.mensalidades-section {
+    background-color: #e0e5d8;
+    padding: 80px;
+    text-align: center;
+}
+
+.mensalidades-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.mensalidades-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mensalidade-card {
     background-color: #a8b898;
     border-radius: 20px;
     padding: 40px;
     width: 28%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
+    text-align: left;
 }
 
-.funciona-card img {
-    width: 70px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.funciona-card h3 {
+.mensalidade-card h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.funciona-card p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.contato-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 50px;
-    background-color: #a8b898;
-    color: white;
-}
-
-.contato-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.contato-img {
-    width: 400px;
-    height: auto;
-    margin-right: 50px;
-    border-radius: 10px;
-}
-
-.contato-text {
-    max-width: 50%;
-    text-align: left;
-}
-
-.contato-text h2 {
-    font-size: 36px;
-    color: white;
+.mensalidade-card p {
+    font-size: 20px;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
-.contato-text p {
-    font-size: 18px;
-    color: white;
-    margin-bottom: 30px;
+.mensalidade-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
 }
 
-.contato-text .btn {
+.mensalidade-card ul li {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.mensalidade-card .btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: white;
@@ -226,10 +206,66 @@ nav ul li a {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    border: 1px solid white;
+    border: 1px solid #a8b898;
+}
+
+.mensalidade-card .btn:hover {
+    background-color: #333;
+    color: white;
+    border-color: #333;
+}
+
+/* Estilos para a seção de contato */
+.contato-section {
+    background-color: #f7f7f7;
+    padding: 80px;
+    text-align: center;
+}
+
+.contato-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contato-img img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.contato-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.contato-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contato-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contato-text .btn {
+    display: inline-block;
+    background-color: #3a4a40;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .contato-text .btn:hover {
-    background-color: #333;
+    background-color: #2f3d34;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #3a4a40;
     color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
 }
