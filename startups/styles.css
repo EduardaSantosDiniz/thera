@@ -52,21 +52,24 @@ nav .menu li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 20px;
     background-color: #e0e5d8;
+    width: 100%;
+    height: 80vh; /* Ajustei a altura para 80% da tela */
 }
 
 .banner .content h2 {
-    font-size: 28px;
+    font-size: 36px; /* Tamanho reduzido para o texto */
     color: #333;
     line-height: 1.5;
+    max-width: 50%; /* Limitei a largura do texto */
 }
 
 .banner .btn {
     display: inline-block;
     background-color: #3a4a40;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px; /* Ajustei o padding do botão */
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
@@ -77,8 +80,10 @@ nav .menu li a:hover {
 }
 
 .banner .image img {
-    width: 300px;
+    width: 900px; /* Aumentei a largura da imagem para 80% */
+    max-width: 500px; /* Limitei a largura máxima para 600px */
     border-radius: 20px;
+     /* Garante que a imagem ocupe o espaço sem distorcer */
 }
 
 /* Estilos para a seção de informações */
